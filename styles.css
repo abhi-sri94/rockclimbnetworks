@@ -1,0 +1,184 @@
+/* General Styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3em 1em;
+    background: #f4f4f4;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    gap: 2em;
+    padding: 2em 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 2em); /* 3 cards in a row */
+}
+
+.card h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #777;
+    margin-top: 0.5em;
+}
+
+/* Portfolio, About, and Contact sections */
+.section {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label, form input, form textarea {
+    width: 100%;
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.8em 1.5em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .cta-btn {
+        padding: 0.6em 1.2em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    form {
+        padding: 0 1em;
+    }
+}
